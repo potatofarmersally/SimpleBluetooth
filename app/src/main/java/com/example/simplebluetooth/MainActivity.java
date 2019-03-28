@@ -17,6 +17,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //Trying oncreate. not working either.
+        if(adapter.isEnabled()) {
+            Toast.makeText(getApplicationContext(),"Bluetooth device connected",
+                    Toast.LENGTH_SHORT).show();
+        }
     }
 
     //https://developer.android.com/guide/topics/connectivity/bluetooth
